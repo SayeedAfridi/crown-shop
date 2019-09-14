@@ -13,14 +13,14 @@ import {selectCartHidden} from '../../redux/cart/cart.selectors'
 const Header = ({currentUser, hidden}) => {
     return (
         <div className='header'>
-            <Link to='/' className='logo-container'>
+            <Link to='/crown-shop' className='logo-container'>
                 <Logo className='logo'/>
             </Link>
             <div className='options'>
-                <Link to='/shop' className='option'>
+                <Link to='/crown-shop/shop' className='option'>
                     SHOP
                 </Link>
-                <Link to='/shop' className='option'>
+                <Link to='/crown-shop/shop' className='option'>
                     CONTACT
                 </Link>
                 {
@@ -29,7 +29,7 @@ const Header = ({currentUser, hidden}) => {
                         SIGN OUT
                     </div>
                     :
-                    <Link to='/signin' className='option'>
+                    <Link to='/crown-shop/signin' className='option'>
                         SIGN IN
                     </Link>
                 }
