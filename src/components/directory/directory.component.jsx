@@ -7,11 +7,11 @@ import {createStructuredSelector} from 'reselect'
 
 const Directory = ({sections}) => (
   <div className='directory-menu'>
-      {
-          this.state.sections.map(({id, ...sectionProps}) => (
-              <MenuItem key={id} {...sectionProps} />
-          ))
-      }
+    {
+      sections.map(({id, ...sectionProps})=>
+        <MenuItem key={id} {...sectionProps}/>
+      )
+    }
   </div>
 )
 
