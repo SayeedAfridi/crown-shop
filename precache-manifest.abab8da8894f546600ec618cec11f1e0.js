@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9667a591973c5e72c9608c715e32f5dc",
+    "revision": "60ac3cc907bd5d2ec684cd869776c69e",
     "url": "/crown-shop/index.html"
   },
   {
-    "revision": "a9466a1c4040958e0557",
-    "url": "/crown-shop/static/css/main.bd5367fa.chunk.css"
+    "revision": "bd3f376e5c6497cc3832",
+    "url": "/crown-shop/static/css/main.c136454f.chunk.css"
   },
   {
-    "revision": "cbb0ecf525ef2f529a1c",
-    "url": "/crown-shop/static/js/2.665082d9.chunk.js"
+    "revision": "93a9c127c84d47bfa3fd",
+    "url": "/crown-shop/static/js/2.48462199.chunk.js"
   },
   {
-    "revision": "a9466a1c4040958e0557",
-    "url": "/crown-shop/static/js/main.92728415.chunk.js"
+    "revision": "bd3f376e5c6497cc3832",
+    "url": "/crown-shop/static/js/main.fdc71be8.chunk.js"
   },
   {
     "revision": "9e23704876beb2404cd9",
