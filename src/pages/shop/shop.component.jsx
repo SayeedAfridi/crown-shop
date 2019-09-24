@@ -5,6 +5,10 @@ import CollectionsOverview from '../../components/collections-overview/collectio
 import {firestore, convertCollectionsSnapshotToMap} from '../../firebase/firebase.utils'
 import {updateCollections} from '../../redux/shop/shop.actions'
 import Collection from '../Collection/collection.component'
+import WithSpinner from '../../components/with-spinner/with-spinner.component'
+
+const CollectionsOverviewSpinner = WithSpinner(CollectionsOverview)
+const CollectionSpinner = WithSpinner(Collection)
 
 class Shop extends React.Component {
     state = {
@@ -24,10 +28,11 @@ class Shop extends React.Component {
     }
 
     render(){
+        const {loading} = this.state
         return(
             <div className='shop-page'>
-                <Route exact path='/crown-shop/shop' render={(props)=><CollectionsOverview/>} />
-                <Route path='/crown-shop/shop/:collection' component={Collection} />
+                <Route exact path='/crown-shop/shop' render={(props)=><CollectionsOverviewSpinner isLoading={loading} {...props}/>} />
+                <Route path='/crown-shop/shop/:collection' render={(props) => <CollectionSpinner isLoading={loading} {...props}/>} />
             </div>
         )
     }
