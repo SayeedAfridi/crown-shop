@@ -8,6 +8,7 @@
     border: 1px solid black;
     margin: 0 7.5px 15px;
     overflow: hidden;
+    
 
     &:first-child {
         margin-right: 7.5px;
@@ -47,6 +48,9 @@
     }
     &.large{
         height: 380px;
+        @media screen and (max-width: 800px) {
+          height: 240px;
+       }
     }
     &:hover {
         cursor: pointer;
